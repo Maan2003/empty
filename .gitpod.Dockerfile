@@ -10,4 +10,4 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -yq \
 # Install Chisel
 RUN curl https://i.jpillora.com/chisel! | bash
 
-RUN bash -c "mkdir -p /temp && mount -t tmpfs -o mode=1777 none /temp"
+RUN mkdir -p /temp && mount -t tmpfs -o mode=1777 none /temp
