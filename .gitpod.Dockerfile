@@ -10,5 +10,4 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -yq \
 # Install Chisel
 RUN curl https://i.jpillora.com/chisel! | bash
 
-
-RUN bash -c "useradd -m newuser && usermod -aG sudo newuser && echo -e 'newpasswd\nnewpasswd' | passwd newuser"
+RUN bash -c "mkdir -p /temp && mount -t tmpfs /temp"
