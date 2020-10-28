@@ -9,5 +9,3 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -yq \
 
 # Install Chisel
 RUN curl https://i.jpillora.com/chisel! | bash
-
-RUN echo "hello\nhello" | passwd
