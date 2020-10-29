@@ -2,5 +2,5 @@ FROM gitpod/workspace-full-vnc
 
 USER root
 
-RUN apt update && apt install libgtk-3-dev
+RUN apt update -y && apt install -y libgtk-3-dev
 
